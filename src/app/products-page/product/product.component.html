@@ -1,0 +1,33 @@
+<div class="row">
+  <div id = "STInput" class="input-field col s6">
+    <input id="type_name" class="validate" [(ngModel)]="searchType">
+    <label class="active" for="type_name">Тип товара (например: Dress)</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col s2" *ngFor="let product of products | searchType: searchType" productHover [@HeroState]="products.length">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{product.image}}">
+        <span class="card-title"
+              [ngClass]="{'marked': isMarked}"
+        >
+          {{product.color}}
+      </span>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li type="none">Тип продукта:<span>{{product.type}}</span></li>
+          <li type="none">Материал:<span>{{product.material}}</span></li>
+          <li type="none">Размер:<span>{{[product.sizes]}}</span></li>
+          <li type="none">Дата изменения:<span>{{product.dateOfPurchase}}</span></li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <a class="waves-effect waves-light btn"
+           (click)="onClick()">Отметить</a>
+      </div>
+    </div>
+  </div>
+</div>
+

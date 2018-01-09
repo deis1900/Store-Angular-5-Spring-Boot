@@ -1,0 +1,54 @@
+.nav-wrapper {
+
+}
+
+.Regist {
+  padding: 20px;
+  border-bottom-color: rgba(1000, 1000, 1000, 0.996);
+  border-radius: 10px;
+  background: rgba(1000, 1000, 1000, 0.996);
+  box-shadow: 0 0 5px 2px black;
+  background-clip: content-box;
+}
+
+.new-form-user {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(1000, 1000, 1000, 0.7);
+  box-shadow: 0 0 5px 2px black;
+  background-clip: content-box;
+}
+
+.row {
+  right: auto;
+}
+
+*{
+  font-family: Areal;
+}
+.b-container{
+  width:200px;
+  height:150px;
+  background-color: #ccc;
+  margin:0px auto;
+  padding:10px;
+  font-size:30px;
+  color: #fff;
+}
+.b-popup{
+  width:100%;
+  min-height:100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:fixed;
+  top:0px;
+}
+.b-popup .b-popup-content{
+  margin:40px auto 0px auto;
+  width:100px;
+  height: 40px;
+  padding:10px;
+  background-color: #c5c5c5;
+  border-radius:5px;
+  box-shadow: 0px 0px 10px #000;
+}
